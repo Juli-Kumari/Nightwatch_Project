@@ -1,0 +1,2212 @@
+Starting ChromeDriver 131.0.6778.264 (2d05e31515360f4da764174f7c448b33e36da871-refs/branch-heads/6778@{#4323}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 9515.
+[1744956908.656][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "binary": "/usr/bin/google-chrome"
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1744956908.656][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1744956908.656][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1744956908.656][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1744956908.656][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1744956908.656][INFO]: Launching chrome: /usr/bin/google-chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging=stderr --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.KTTTQM data:,
+[15696:15696:0418/114508.674258:WARNING:chrome_main_delegate.cc(672)] This is Chrome version 131.0.6778.204 (not a warning)
+/snap/core20/current/lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /lib/x86_64-linux-gnu/libproxy.so.1)
+Failed to load module: /home/juli/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+[15696:15696:0418/114508.770061:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+
+DevTools listening on ws://127.0.0.1:38381/devtools/browser/13afdc97-da82-4106-94a7-6c097682c005
+[1744956908.818][DEBUG]: DevTools HTTP Request: http://localhost:38381/json/version
+[15741:15741:0418/114508.893034:WARNING:sandbox_linux.cc(430)] InitializeSandbox() called with multiple threads in process gpu-process.
+[15741:15741:0418/114508.893874:WARNING:viz_main_impl.cc(85)] VizNullHypothesis is disabled (not a warning)
+[1744956908.983][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/131.0.6778.204",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+   "V8-Version": "13.1.201.19",
+   "WebKit-Version": "537.36 (@52183f9e99a61056f9b78535f53d256f1516f2a0)",
+   "webSocketDebuggerUrl": "ws://localhost:38381/devtools/browser/13afdc97-da82-4106-94a7-6c097682c005"
+}
+
+[1744956908.983][DEBUG]: DevTools HTTP Request: http://localhost:38381/json/list
+[1744956908.991][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:38381/devtools/page/41C53F9495D83A01F1F8FC44E17993E0",
+   "id": "41C53F9495D83A01F1F8FC44E17993E0",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:38381/devtools/page/41C53F9495D83A01F1F8FC44E17993E0"
+} ]
+
+[1744956908.991][INFO]: resolved localhost to ["127.0.0.1"]
+[15696:15696:0418/114508.993534:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not implemented
+[1744956908.994][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1744956908.995][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "F037580B0A198FB1499EFD0FA15546E2",
+      "canAccessOpener": false,
+      "targetId": "41C53F9495D83A01F1F8FC44E17993E0",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1744956908.996][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "41C53F9495D83A01F1F8FC44E17993E0"
+}
+[1744956909.005][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "7B4434B25A8991B59655E2F4D30298BB",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "F037580B0A198FB1499EFD0FA15546E2",
+      "canAccessOpener": false,
+      "targetId": "41C53F9495D83A01F1F8FC44E17993E0",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1744956909.005][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "7B4434B25A8991B59655E2F4D30298BB"
+}
+[1744956909.005][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.005][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1744956909.005][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1744956909.005][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.005][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1744956909.012][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.012][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "identifier": "1"
+}
+[1744956909.012][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1744956909.013][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.013][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.013][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.014][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "timestamp": 3318.174069
+}
+[1744956909.014][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "timestamp": 3318.17455
+}
+[1744956909.021][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameId": "41C53F9495D83A01F1F8FC44E17993E0"
+}
+[1744956909.021][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.022][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "context": {
+      "auxData": {
+         "frameId": "41C53F9495D83A01F1F8FC44E17993E0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "9169489423207361073.4269941123240885610"
+   }
+}
+[1744956909.022][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.022][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.022][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956909.023][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.204",
+      "chrome": {
+         "chromedriverVersion": "131.0.6778.264 (2d05e31515360f4da764174f7c448b33e36da871-refs/branch-heads/6778@{#4323})",
+         "userDataDir": "/tmp/.org.chromium.Chromium.KTTTQM"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:38381"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "linux",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "fdb6097259fdf489ef27614a38d1d2d1"
+}
+[1744956909.038][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND Navigate {
+   "url": "https://the-internet.herokuapp.com/dropdown"
+}
+[1744956909.038][INFO]: Waiting for pending navigations...
+[1744956909.038][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956909.039][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956909.039][INFO]: Done waiting for pending navigations. Status: ok
+[1744956909.039][DEBUG]: DevTools WebSocket Command: Page.navigate (id=11) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "url": "https://the-internet.herokuapp.com/dropdown"
+}
+[1744956909.042][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameId": "41C53F9495D83A01F1F8FC44E17993E0"
+}
+[1744956910.479][DEBUG]: DevTools WebSocket Response: Page.navigate (id=11) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameId": "41C53F9495D83A01F1F8FC44E17993E0",
+   "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532"
+}
+[1744956910.479][INFO]: Waiting for pending navigations...
+[1744956910.479][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=12) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956910.481][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956910.483][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956910.483][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "the-internet.herokuapp.com",
+      "gatedAPIFeatures": [  ],
+      "id": "41C53F9495D83A01F1F8FC44E17993E0",
+      "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://the-internet.herokuapp.com",
+      "url": "https://the-internet.herokuapp.com/dropdown"
+   },
+   "type": "Navigation"
+}
+[1744956910.499][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "context": {
+      "auxData": {
+         "frameId": "41C53F9495D83A01F1F8FC44E17993E0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://the-internet.herokuapp.com",
+      "uniqueId": "-90565407799021844.956459225671131733"
+   }
+}
+[1744956910.502][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=12) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956911.010][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=13) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956911.011][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=13) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956911.519][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956911.522][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956912.036][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=15) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956912.038][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=15) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956912.546][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956912.547][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956913.056][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956913.057][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956913.559][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956913.560][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956914.068][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956914.069][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956914.572][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956914.573][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.064][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "timestamp": 3324.22415
+}
+[1744956915.064][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "timestamp": 3324.224734
+}
+[1744956915.064][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.065][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameId": "41C53F9495D83A01F1F8FC44E17993E0"
+}
+[1744956915.065][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1744956915.065][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.066][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.066][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.066][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE Navigate
+[1744956915.069][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#dropdown"
+}
+[1744956915.069][INFO]: Waiting for pending navigations...
+[1744956915.070][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.070][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.070][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.070][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=24) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.070][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=24) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.070][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=25) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.071][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=25) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.072][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=26) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.079][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=26) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "id": "dropdown"
+               },
+               "backendNodeId": 1,
+               "childNodeCount": 7,
+               "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+               "localName": "select",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1,
+               "shadowRoot": {
+                  "type": "node",
+                  "value": {
+                     "backendNodeId": 2,
+                     "childNodeCount": 2,
+                     "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+                     "mode": "closed",
+                     "nodeType": 11
+                  }
+               }
+            }
+         } ]
+      },
+      "description": "Array(2)",
+      "objectId": "-7347568542611381000.1.1",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.079][INFO]: Waiting for pending navigations...
+[1744956915.079][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.079][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.079][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.079][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.41C53F9495D83A01F1F8FC44E17993E0.d.9FF7A6D0C5D8F5C457FCFA141BC6C532.e.1"
+} ]
+[1744956915.081][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND ClickElement {
+   "id": "f.41C53F9495D83A01F1F8FC44E17993E0.d.9FF7A6D0C5D8F5C457FCFA141BC6C532.e.1"
+}
+[1744956915.081][INFO]: Waiting for pending navigations...
+[1744956915.081][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.081][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.081][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.081][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=29) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.082][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=29) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.082][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=30) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "e011e6bc-fb4c-4f11-a653-00bb09fcabd6"
+}
+[1744956915.082][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=30) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.082][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=31) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.082][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=31) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.082][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=32) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.2"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "e011e6bc-fb4c-4f11-a653-00bb09fcabd6",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=32) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"select\"}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.3",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=33) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "e011e6bc-fb4c-4f11-a653-00bb09fcabd6"
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=34) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=33) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=34) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=35) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "5f4216ae-770a-436d-a0ee-2daa7c1df580"
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=35) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.4",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=36) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=36) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.084][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=37) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.4"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "5f4216ae-770a-436d-a0ee-2daa7c1df580",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=37) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"select\"}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.5",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=38) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "5f4216ae-770a-436d-a0ee-2daa7c1df580"
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=39) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=38) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=39) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=40) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "09a3b357-3f95-44ab-ab45-8d5d51d77517"
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=40) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.6",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=41) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.085][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=41) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.086][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=42) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.6"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "09a3b357-3f95-44ab-ab45-8d5d51d77517",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.090][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=42) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.7",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.090][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=43) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "09a3b357-3f95-44ab-ab45-8d5d51d77517"
+}
+[1744956915.091][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=44) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.091][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=43) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.092][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=44) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.092][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=45) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "adf40de4-5dce-4ea0-b1cd-f3fb8eb9e268"
+}
+[1744956915.092][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=45) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.8",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.092][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=46) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.092][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=46) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.093][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=47) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.8"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "adf40de4-5dce-4ea0-b1cd-f3fb8eb9e268",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.095][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=47) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"left\":0,\"top\":0,\"height\":21,\"width\":970}}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.9",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.095][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=48) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "adf40de4-5dce-4ea0-b1cd-f3fb8eb9e268"
+}
+[1744956915.095][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=49) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.095][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=48) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.095][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=49) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.095][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=50) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "c33af751-0f01-43d8-bc33-49167d8e54a4"
+}
+[1744956915.096][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=50) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.10",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.096][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=51) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.096][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=51) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.097][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=52) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.10"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "c33af751-0f01-43d8-bc33-49167d8e54a4",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.101][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=52) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"x\":18,\"y\":88.6875,\"clone\":{},\"ceil\":{},\"floor\":{},\"round\":{},\"translate\":{},\"scale\":{}}}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.11",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.101][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=53) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "c33af751-0f01-43d8-bc33-49167d8e54a4"
+}
+[1744956915.101][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=54) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.101][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=53) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.101][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=54) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.101][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=55) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "f239c2a6-bc70-4dfd-8383-19e3396912ef"
+}
+[1744956915.102][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=55) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.12",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.102][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=56) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.102][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=56) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.102][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=57) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.12"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "f239c2a6-bc70-4dfd-8383-19e3396912ef",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.105][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=57) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"clickable\":true}}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.13",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.105][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=58) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "f239c2a6-bc70-4dfd-8383-19e3396912ef"
+}
+[1744956915.105][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=59) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.105][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=58) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.105][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=59) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.105][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=60) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "b1b17a62-5bca-4927-829d-073c929aa255"
+}
+[1744956915.106][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=60) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.14",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.106][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=61) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.106][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=61) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.106][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=62) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.14"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "b1b17a62-5bca-4927-829d-073c929aa255",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.106][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=62) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"select\"}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.15",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.107][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=63) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "b1b17a62-5bca-4927-829d-073c929aa255"
+}
+[1744956915.107][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=64) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.107][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=63) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.107][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=64) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.107][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=65) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "4a1f42e7-26ec-478c-a357-3039370b7dd4"
+}
+[1744956915.107][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=65) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.16",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.107][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=66) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.107][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=66) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.108][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=67) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.16"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "4a1f42e7-26ec-478c-a357-3039370b7dd4",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.110][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=67) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":true}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.17",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.110][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=68) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "4a1f42e7-26ec-478c-a357-3039370b7dd4"
+}
+[1744956915.110][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=69) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.110][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=68) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.110][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=69) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.110][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=70) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "3a71a716-2b53-4c4f-9ab8-06d2e996453f"
+}
+[1744956915.110][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=70) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.18",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.110][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=71) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.111][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=71) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.111][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=72) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.18"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "3a71a716-2b53-4c4f-9ab8-06d2e996453f",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=72) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"left\":0,\"top\":0,\"height\":21,\"width\":970}}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.19",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=73) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "3a71a716-2b53-4c4f-9ab8-06d2e996453f"
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=74) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=73) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=74) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=75) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "5dc35c57-8627-4d6d-b00a-ed9cd1ce47bb"
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=75) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.20",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=76) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.112][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=76) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.113][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=77) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.20"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "5dc35c57-8627-4d6d-b00a-ed9cd1ce47bb",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.114][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=77) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"x\":18,\"y\":88.6875,\"clone\":{},\"ceil\":{},\"floor\":{},\"round\":{},\"translate\":{},\"scale\":{}}}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.21",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.115][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=78) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "5dc35c57-8627-4d6d-b00a-ed9cd1ce47bb"
+}
+[1744956915.115][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=79) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.115][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=78) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.115][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=79) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.115][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=80) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 1,
+   "objectGroup": "3b938bed-2503-48a7-9920-9a1f004e7964"
+}
+[1744956915.115][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=80) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLSelectElement",
+      "description": "select#dropdown",
+      "objectId": "-7347568542611381000.1.22",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.115][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=81) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.115][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=81) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.116][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=82) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.22"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "3b938bed-2503-48a7-9920-9a1f004e7964",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.117][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=82) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":{\"clickable\":true}}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.23",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.117][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=83) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "3b938bed-2503-48a7-9920-9a1f004e7964"
+}
+[1744956915.117][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=84) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "button": "none",
+   "buttons": 0,
+   "clickCount": 0,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseMoved",
+   "x": 503,
+   "y": 99
+}
+[1744956915.117][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=85) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "button": "left",
+   "buttons": 0,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mousePressed",
+   "x": 503,
+   "y": 99
+}
+[1744956915.117][DEBUG]: DevTools WebSocket Command: Input.dispatchMouseEvent (id=86) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "button": "left",
+   "buttons": 1,
+   "clickCount": 1,
+   "force": 0.0,
+   "modifiers": 0,
+   "pointerType": "mouse",
+   "tangentialPressure": 0.0,
+   "tiltX": 0,
+   "tiltY": 0,
+   "twist": 0,
+   "type": "mouseReleased",
+   "x": 503,
+   "y": 99
+}
+[1744956915.117][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=83) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.117][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=84) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.126][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=85) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.126][DEBUG]: DevTools WebSocket Response: Input.dispatchMouseEvent (id=86) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.126][INFO]: Waiting for pending navigations...
+[1744956915.127][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=87) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.128][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=87) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.128][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.128][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE ClickElement
+[1744956915.129][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#dropdown option[value='1']"
+}
+[1744956915.129][INFO]: Waiting for pending navigations...
+[1744956915.129][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=88) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.130][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=88) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.130][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.130][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=89) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.130][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=89) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.130][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=90) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.131][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=90) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.132][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=91) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.137][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=91) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "value": "1"
+               },
+               "backendNodeId": 5,
+               "childNodeCount": 1,
+               "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+               "localName": "option",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1,
+               "shadowRoot": {
+                  "type": "node",
+                  "value": {
+                     "backendNodeId": 6,
+                     "childNodeCount": 1,
+                     "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+                     "mode": "closed",
+                     "nodeType": 11
+                  }
+               }
+            }
+         } ]
+      },
+      "description": "Array(2)",
+      "objectId": "-7347568542611381000.1.24",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.137][INFO]: Waiting for pending navigations...
+[1744956915.137][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=92) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.138][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=92) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.138][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.138][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.41C53F9495D83A01F1F8FC44E17993E0.d.9FF7A6D0C5D8F5C457FCFA141BC6C532.e.5"
+} ]
+[1744956915.139][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND ClickElement {
+   "id": "f.41C53F9495D83A01F1F8FC44E17993E0.d.9FF7A6D0C5D8F5C457FCFA141BC6C532.e.5"
+}
+[1744956915.139][INFO]: Waiting for pending navigations...
+[1744956915.139][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=93) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.139][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=93) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.139][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.139][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=94) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.139][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=94) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.139][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=95) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 5,
+   "objectGroup": "801aabb0-a546-42a8-a8f9-ab94bff6a492"
+}
+[1744956915.140][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=95) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLOptionElement",
+      "description": "option",
+      "objectId": "-7347568542611381000.1.25",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.140][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=96) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.140][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=96) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.140][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=97) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.25"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "801aabb0-a546-42a8-a8f9-ab94bff6a492",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=97) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"option\"}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.26",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=98) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "801aabb0-a546-42a8-a8f9-ab94bff6a492"
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=99) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=98) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=99) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=100) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 5,
+   "objectGroup": "30b4dfac-d19b-48ad-9b6e-945585d463a5"
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=100) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLOptionElement",
+      "description": "option",
+      "objectId": "-7347568542611381000.1.27",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=101) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.141][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=101) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.142][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=102) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.27"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "30b4dfac-d19b-48ad-9b6e-945585d463a5",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=102) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":false}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.28",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=103) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "30b4dfac-d19b-48ad-9b6e-945585d463a5"
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=104) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=103) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=104) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=105) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 5,
+   "objectGroup": "a7f237f8-9ae6-4200-abfc-28c473c5ae98"
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=105) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLOptionElement",
+      "description": "option",
+      "objectId": "-7347568542611381000.1.29",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=106) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.143][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=106) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.144][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=107) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.29"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "a7f237f8-9ae6-4200-abfc-28c473c5ae98",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.151][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=107) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":null}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.30",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.151][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=108) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "a7f237f8-9ae6-4200-abfc-28c473c5ae98"
+}
+[1744956915.151][INFO]: Waiting for pending navigations...
+[1744956915.151][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=109) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.152][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=108) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.152][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=109) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.152][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.152][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE ClickElement
+[1744956915.156][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND FindElements {
+   "using": "css selector",
+   "value": "#dropdown option[selected='selected']"
+}
+[1744956915.156][INFO]: Waiting for pending navigations...
+[1744956915.156][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=110) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.156][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=110) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.156][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.156][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=111) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.157][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=111) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.157][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=112) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.157][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=112) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.158][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=113) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.162][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=113) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "selected": "selected",
+                  "value": "1"
+               },
+               "backendNodeId": 5,
+               "childNodeCount": 1,
+               "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+               "localName": "option",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1,
+               "shadowRoot": {
+                  "type": "node",
+                  "value": {
+                     "backendNodeId": 6,
+                     "childNodeCount": 1,
+                     "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+                     "mode": "closed",
+                     "nodeType": 11
+                  }
+               }
+            }
+         } ]
+      },
+      "description": "Array(2)",
+      "objectId": "-7347568542611381000.1.31",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.162][INFO]: Waiting for pending navigations...
+[1744956915.162][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=114) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.162][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=114) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.162][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.162][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.41C53F9495D83A01F1F8FC44E17993E0.d.9FF7A6D0C5D8F5C457FCFA141BC6C532.e.5"
+} ]
+[1744956915.164][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND GetElementText {
+   "id": "f.41C53F9495D83A01F1F8FC44E17993E0.d.9FF7A6D0C5D8F5C457FCFA141BC6C532.e.5"
+}
+[1744956915.164][INFO]: Waiting for pending navigations...
+[1744956915.164][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=115) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.164][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=115) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.164][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.164][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=116) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.164][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=116) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.164][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=117) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "backendNodeId": 5,
+   "objectGroup": "cc805cd8-34a5-4830-b534-da2c69d7f1e7"
+}
+[1744956915.165][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=117) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "object": {
+      "className": "HTMLOptionElement",
+      "description": "option",
+      "objectId": "-7347568542611381000.1.32",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1744956915.165][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=118) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.165][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=118) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "the-internet.herokuapp.com",
+         "gatedAPIFeatures": [  ],
+         "id": "41C53F9495D83A01F1F8FC44E17993E0",
+         "loaderId": "9FF7A6D0C5D8F5C457FCFA141BC6C532",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://the-internet.herokuapp.com",
+         "url": "https://the-internet.herokuapp.com/dropdown"
+      }
+   }
+}
+[1744956915.165][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=119) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "arguments": [ {
+      "objectId": "-7347568542611381000.1.32"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "objectGroup": "cc805cd8-34a5-4830-b534-da2c69d7f1e7",
+   "serializationOptions": {
+      "serialization": "deep"
+   },
+   "uniqueContextId": "-90565407799021844.956459225671131733"
+}
+[1744956915.171][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=119) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "className": "Array",
+      "deepSerializedValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"Option 1\"}"
+         } ]
+      },
+      "description": "Array(1)",
+      "objectId": "-7347568542611381000.1.33",
+      "subtype": "array",
+      "type": "object"
+   }
+}
+[1744956915.171][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=120) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "objectGroup": "cc805cd8-34a5-4830-b534-da2c69d7f1e7"
+}
+[1744956915.171][INFO]: Waiting for pending navigations...
+[1744956915.171][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=121) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "expression": "1"
+}
+[1744956915.171][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=120) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+}
+[1744956915.171][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=121) (session_id=7B4434B25A8991B59655E2F4D30298BB) 41C53F9495D83A01F1F8FC44E17993E0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1744956915.171][INFO]: Done waiting for pending navigations. Status: ok
+[1744956915.171][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE GetElementText "Option 1"
+[1744956915.179][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] COMMAND Quit {
+}
+[1744956915.229][INFO]: [fdb6097259fdf489ef27614a38d1d2d1] RESPONSE Quit
+[1744956915.229][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1744956915.229][DEBUG]: Log type 'browser' lost 0 entries on destruction
